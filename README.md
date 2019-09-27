@@ -2,6 +2,44 @@
 
 a [Sails v1](https://sailsjs.com) application
 
+## Get travels
+```
+URL: POST {host}/api/get-travels
+Header: {
+  "Content-Type": "application/json"
+}
+Body: {
+  "Language": "string",
+  "Currency": "string",
+  "destination": "string",
+  "DateFrom": "string",
+  "DateTO": "string",
+  "Occupancy": {
+    "AdultCount": "string",
+    "ChildCount": "string",
+    "ChildAges": ["string"]
+  }
+}
+```
+**This is an example using the public endpoint:**
+```
+URL: POST https://testconcepta.herokuapp.com/api/get-travels
+Header: {
+  "Content-Type": "application/json"
+}
+Body: {
+  "Language":"ENG",
+  "Currency":"USD",
+  "destination": "MCO",
+  "DateFrom":"11/26/2019",
+  "DateTO":"11/29/2019",
+  "Occupancy":{
+    "AdultCount": "1",
+    "ChildCount": "1",
+    "ChildAges": ["10"]
+  }
+}
+```
 
 ### Links
 
@@ -15,12 +53,3 @@ a [Sails v1](https://sailsjs.com) application
 ### Version info
 
 This app was originally generated on Thu Sep 26 2019 14:23:12 GMT-0300 (GMT-03:00) using Sails v1.2.3.
-
-<!-- Internally, Sails used [`sails-generate@1.16.13`](https://github.com/balderdashy/sails-generate/tree/v1.16.13/lib/core-generators/new). -->
-
-
-
-<!--
-Note:  Generators are usually run using the globally-installed `sails` CLI (command-line interface).  This CLI version is _environment-specific_ rather than app-specific, thus over time, as a project's dependencies are upgraded or the project is worked on by different developers on different computers using different versions of Node.js, the Sails dependency in its package.json file may differ from the globally-installed Sails CLI release it was originally generated with.  (Be sure to always check out the relevant [upgrading guides](https://sailsjs.com/upgrading) before upgrading the version of Sails used by your app.  If you're stuck, [get help here](https://sailsjs.com/support).)
--->
-
