@@ -1,18 +1,17 @@
 {
-  "name": "testconcepta",
+  "name": "testconcepta2",
   "private": true,
   "version": "0.0.0",
   "description": "a Sails application",
   "keywords": [],
   "dependencies": {
     "@sailshq/lodash": "^3.10.3",
-    "date-fns": "^2.3.0",
-    "node-cache": "^4.2.1",
     "request": "^2.88.0",
     "request-promise": "^4.2.4",
     "sails": "^1.2.3",
     "sails-hook-orm": "^2.1.1",
-    "sails-hook-sockets": "^2.0.0"
+    "sails-hook-sockets": "^2.0.0",
+    "sails-local-fs": "^0.9.11"
   },
   "devDependencies": {
     "eslint": "5.16.0"
@@ -26,7 +25,7 @@
   "main": "app.js",
   "repository": {
     "type": "git",
-    "url": "git://github.com/lucasilgo/testconcepta.git"
+    "url": "git://github.com/lucasilgo/testconcepta2.git"
   },
   "author": "lucasilgo",
   "license": "",

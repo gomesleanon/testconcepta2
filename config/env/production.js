@@ -374,13 +374,6 @@ module.exports = {
     baseUrl: 'https://example.com',
     internalEmailAddress: 'support@example.com',
 
-    api: {
-      url: 'http://travellogix.api.test.conceptsol.com/Token',
-      grant_type: 'password',
-      username: 'test1%40test2.com',
-      password: 'Aa234567%21'
-    }
-
     // mailgunDomain: 'mg.example.com',
     // mailgunSecret: 'key-prod_fake_bd32301385130a0bafe030c',
     // stripeSecret: 'sk_prod__fake_Nfgh82401348jaDa3lkZ0d9Hm',

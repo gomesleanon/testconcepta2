@@ -1,43 +1,19 @@
-# testconcepta
+# testconcepta2
 
 a [Sails v1](https://sailsjs.com) application
 
-## Get travels
+## Get CSV of an input in NACHA Format.
 ```
-URL: POST {host}/api/get-travels
-Header: {
-  "Content-Type": "application/json"
-}
+URL: POST {host}/api/get-csv
 Body: {
-  "Language": "string",
-  "Currency": "string",
-  "destination": "string",
-  "DateFrom": "string",
-  "DateTO": "string",
-  "Occupancy": {
-    "AdultCount": "string",
-    "ChildCount": "string",
-    "ChildAges": ["string"]
-  }
+  "input": A text file in the NACHA format.
 }
 ```
 **This is an example using the public endpoint:**
 ```
 URL: POST https://testconcepta.herokuapp.com/api/get-travels
-Header: {
-  "Content-Type": "application/json"
-}
 Body: {
-  "Language":"ENG",
-  "Currency":"USD",
-  "destination": "MCO",
-  "DateFrom":"11/26/2019",
-  "DateTO":"11/29/2019",
-  "Occupancy":{
-    "AdultCount": "1",
-    "ChildCount": "1",
-    "ChildAges": ["10"]
-  }
+  "input": ./input.txt
 }
 ```
 
@@ -48,8 +24,3 @@ Body: {
 + [Deployment tips](https://sailsjs.com/documentation/concepts/deployment)
 + [Community support options](https://sailsjs.com/support)
 + [Professional / enterprise options](https://sailsjs.com/enterprise)
-
-
-### Version info
-
-This app was originally generated on Thu Sep 26 2019 14:23:12 GMT-0300 (GMT-03:00) using Sails v1.2.3.

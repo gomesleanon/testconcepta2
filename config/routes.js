@@ -9,5 +9,5 @@
  */
 
 module.exports.routes = {
-  'POST /api/get-travels': 'ServiceApiController.getTravels',
+  'POST /api/get-csv': 'NachaController.getCsvFormatted',
 };

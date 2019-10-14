@@ -1,5 +1,3 @@
-const NodeCache = require('node-cache')
-
 /**
  * Global Variable Configuration
  * (sails.config.globals)
@@ -52,7 +50,4 @@ module.exports.globals = {
   ****************************************************************************/
 
   sails: true,
-
-  cache: new NodeCache({ stdTTL: 24 * 60 * 60 })
-
 };
